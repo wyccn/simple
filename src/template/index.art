@@ -1,0 +1,8 @@
+<div class="wrapper">
+	<div class="container" onclick="$listener.test(event)">
+		<img class="icon" src="{{require('@/assets/img/icon.png')}}"/>
+		<div class="text">
+			{{$data.title}}
+		</div>
+	</div>
+</div>
