@@ -1,0 +1,26 @@
+{
+	"name": {
+		"message": "项目名称"
+	},
+	"describe" : {
+		"required" : false,
+		"message": "项目描述",
+		"default": "h5 simple template"
+	},
+	"version" : {
+		"required" : false,
+		"message": "项目版本号",
+		"default": "1.0.0"
+	},
+	"author" : {
+		"message": "项目作者"
+	},
+	"yall" : {
+		"type": "confirm",
+		"message": "是否安装图片懒加载yall.js"
+	},
+	"px2rem" : {
+		"message": "请输入(设计稿宽度/10)",
+		"default" : "75"
+	}
+}

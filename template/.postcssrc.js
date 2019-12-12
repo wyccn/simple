@@ -6,7 +6,7 @@
  * @Version: 1.0.0
  * @Date: 2019-06-17 16:37:57
  * @LastEditors: WangYunChuan
- * @LastEditTime: 2019-11-21 09:03:30
+ * @LastEditTime: 2019-12-12 15:15:10
  */
 // https://github.com/michael-ciniawsky/postcss-load-config
 
@@ -23,7 +23,7 @@ module.exports = {
 		"postcss-import": {},
     "autoprefixer": {},
     'postcss-px2rem-exclude': {
-      remUnit: 75,
+      remUnit: {{px2rem}},
       exclude: /node_modules|folder_name/i
     }
   }

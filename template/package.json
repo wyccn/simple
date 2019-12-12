@@ -1,13 +1,13 @@
 {
-  "name": "getvoucher",
-  "version": "1.0.0",
-  "description": "",
+  "name": "{{name}}",
+  "version": "{{version}}",
+  "description": "{{describe}}",
   "main": "index.js",
   "scripts": {
     "start": "cross-env NODE_ENV=development webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "build": "cross-env NODE_ENV=production node build/build.js"
   },
-  "author": "",
+  "author": "{{author}}",
   "license": "ISC",
   "devDependencies": {
     "art-template-loader": "^1.4.3",
@@ -56,6 +56,9 @@
     "iOS >= 8"
   ],
   "dependencies": {
+		{{#yall}}
+		"yall-js": "^3.1.7",
+		{{/yall}}
     "amfe-flexible": "^2.2.1",
     "art-template": "^4.13.2"
   }
