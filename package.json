@@ -1,0 +1,24 @@
+{
+  "name": "simple",
+  "version": "1.0.4",
+  "description": "轻量级h5开发模板",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wyccn/simple.git"
+  },
+  "keywords": [
+    "模板",
+    "template",
+    "轻量级"
+  ],
+  "author": "wangyunchuan3410@163.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wyccn/simple/issues"
+  },
+  "homepage": "https://github.com/wyccn/simple#readme"
+}

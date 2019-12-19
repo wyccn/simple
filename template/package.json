@@ -61,5 +61,5 @@
 		{{/yall}}
     "amfe-flexible": "^2.2.1",
     "art-template": "^4.13.2"
-  }
+	}
 }
