@@ -6,7 +6,7 @@
  * @Version: 1.0.0
  * @Date: 2019-06-19 19:41:59
  * @LastEditors: WangYunChuan
- * @LastEditTime: 2019-12-06 13:33:42
+ * @LastEditTime: 2019-12-19 11:21:56
  */
 'use strict'
 const path = require('path');
@@ -17,10 +17,10 @@ module.exports = {
         assetsSubDirectory: 'static',
         assetsPublicPath: '/',
         proxyTable: {},
-        host: '192.168.2.234', 
-        port: 8088, 
+        host: "{{host}}", 
+        port: "{{port}}", 
         autoOpenBrowser: true,
-        devtool: 'eval-source-map'
+        devtool: 'cheap-module-eval-source-map'
     },
 		//生产环境
     build: {
@@ -28,8 +28,13 @@ module.exports = {
         assetsRoot: path.resolve(__dirname, '../dist'),
         assetsSubDirectory: 'static',
         assetsPublicPath: '/',
-        devtool: false,
-        productionGzip: true,
+				devtool: false,
+				{{#yall}}
+					productionGzip: true,
+				{{/yall}}
+				{{#!yall}}
+					productionGzip: false,
+				{{/yall}}
         productionGzipExtensions: ['js', 'css']
     }
 }

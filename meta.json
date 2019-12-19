@@ -22,5 +22,17 @@
 	"px2rem" : {
 		"message": "请输入(设计稿宽度/10)",
 		"default" : "75"
+	},
+	"host" : {
+		"message": "请输入启动host",
+		"default" : "localhost"
+	},
+	"port" : {
+		"message": "请输入启动端口",
+		"default" : "3000"
+	},
+	"gzip" : {
+		"type": "confirm",
+		"message": "是否开启gzip压缩功能"
 	}
 }
