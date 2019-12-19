@@ -6,7 +6,7 @@
  * @Version: 1.0.0
  * @Date: 2019-06-19 19:41:59
  * @LastEditors: WangYunChuan
- * @LastEditTime: 2019-12-19 11:21:56
+ * @LastEditTime: 2019-12-19 11:30:45
  */
 'use strict'
 const path = require('path');
@@ -29,12 +29,11 @@ module.exports = {
         assetsSubDirectory: 'static',
         assetsPublicPath: '/',
 				devtool: false,
-				{{#yall}}
+				{{#if gzip}}
 					productionGzip: true,
-				{{/yall}}
-				{{#!yall}}
+				{{else}}
 					productionGzip: false,
-				{{/yall}}
+				{{/if}}
         productionGzipExtensions: ['js', 'css']
     }
 }
