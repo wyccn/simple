@@ -3,8 +3,8 @@
  * @Author: WangYunChuan
  * @Email: wangyunchuan3410@163.com
  * @Date: 2019-11-21 11:21:34
- * @LastEditors: WangYunChuan
- * @LastEditTime: 2019-11-21 14:07:34
+ * @LastEditors  : WangYunChuan
+ * @LastEditTime : 2019-12-23 17:54:21
  */
 
 /**
@@ -66,7 +66,7 @@ const httpRequst = ( options ) => {
 				}
 				formatStr = formatStr.join('&');
 				return formatStr;
-			}else if( method == 'POST'&& header != defaultHeader ){
+			}else if( options.method == 'POST'&& options.header != _options.header ){
 				return data;
 			}
 			return null;
