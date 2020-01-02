@@ -3,8 +3,8 @@
  * @Author: WangYunChuan
  * @Email: wangyunchuan3410@163.com
  * @Date: 2019-11-25 13:57:46
- * @LastEditors: WangYunChuan
- * @LastEditTime: 2019-12-06 12:17:36
+ * @LastEditors  : WangYunChuan
+ * @LastEditTime : 2020-01-02 10:16:03
  */
 'use strict'
 const webpack = require('webpack');
@@ -51,7 +51,7 @@ const webpackConfig = merge(baseWebpackConfig, {
 	},
   plugins: [
     new webpack.DefinePlugin({
-      'process.env': 'production'
+      'process.env': {NODE_ENV: '"production"'}
     }),
     new UglifyJsPlugin({
       uglifyOptions: {

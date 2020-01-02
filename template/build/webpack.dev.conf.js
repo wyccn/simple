@@ -3,8 +3,8 @@
  * @Author: WangYunChuan
  * @Email: wangyunchuan3410@163.com
  * @Date: 2019-11-20 15:56:33
- * @LastEditors: WangYunChuan
- * @LastEditTime: 2019-12-06 14:14:03
+ * @LastEditors  : WangYunChuan
+ * @LastEditTime : 2020-01-02 10:15:43
  */
 'use strict'
 const webpack = require('webpack');
@@ -46,7 +46,7 @@ const devWebpackConfig = merge(baseWebpackConfig,{
 	},
 	plugins: [
     new webpack.DefinePlugin({
-      'process.env': 'development'
+      'process.env': {NODE_ENV: '"development"'}
     }),
 		new webpack.HotModuleReplacementPlugin(),
     new webpack.NamedModulesPlugin(), 
