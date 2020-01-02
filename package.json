@@ -1,6 +1,6 @@
 {
   "name": "simple",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "轻量级h5开发模板",
   "main": "index.js",
   "scripts": {
