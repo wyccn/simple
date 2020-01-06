@@ -34,5 +34,9 @@
 	"gzip" : {
 		"type": "confirm",
 		"message": "是否开启gzip压缩功能"
+	},
+	"wxjssdk" : {
+		"type": "confirm",
+		"message": "是否引入微信小程序jssdk"
 	}
 }
