@@ -15,9 +15,9 @@
 	"author" : {
 		"message": "项目作者"
 	},
-	"echo" : {
-		"type": "confirm",
-		"message": "是否安装图片懒加载echojs"
+	"publicPath" : {
+		"message" : "请输入资源公共路径",
+		"default" : "/"
 	},
 	"px2rem" : {
 		"message": "请输入(设计稿宽度/10)",
