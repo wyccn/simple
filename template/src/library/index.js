@@ -7,6 +7,8 @@
  * @LastEditTime: 2019-12-06 14:16:07
  */
 import utils from './utils';
+import {toast} from './toast';
 export {
-	utils
+	utils,
+	toast
 }

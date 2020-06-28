@@ -38,5 +38,9 @@
 	"wxjssdk" : {
 		"type": "confirm",
 		"message": "是否引入微信小程序jssdk"
+	},
+	"prerender" : {
+		"type" : "confirm",
+		"message" : "是否开启页面预渲染"
 	}
 }

@@ -37,6 +37,12 @@ const webpackConfig = merge(baseWebpackConfig, {
 	},
 	module: {
     rules: [
+      {{#if prerender}}
+      {
+        test: path.join(__dirname,'../index.html'),
+        loader: 'prerender-loader?string'
+      },
+      {{/if}}
 			{
         test: /\.s[ac]ss$/i,
         use: ExtractTextPlugin.extract({
